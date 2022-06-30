@@ -30,7 +30,7 @@ go install github.com/go-delve/delve/cmd/dlv@latest
 ```
  
 ### Step 3
-add GOBIN environment variable and a alias to start debug session
+add GOBIN environment variable and a alias to start debug session in ~/.bashrc
 ```bash
 export PATH="$HOME/go/bin:$PATH"
 alias godebug="dlv debug --headless --listen=:2345 --log --api-version=2 -- $@"
